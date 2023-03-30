@@ -25,7 +25,7 @@ class NumerosRomanosTest(unittest.TestCase):
     def test_IV(self):
         self.assertEqual(self.n.numero("IV"), 4)
 
-    def num_dos_o_mas(self):
+    def test_num_dos_o_mas_nums(self):
         self.assertEqual(self.n.numero("XXXIV"), 34)
 
 
