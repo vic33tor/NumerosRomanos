@@ -14,5 +14,7 @@ class NumerosRomanos:
                     self.resultado = 10
                 elif num_romano == "L":
                     self.resultado = 50
+                elif num_romano == "C":
+                    self.resultado = 100
 
         return self.resultado
