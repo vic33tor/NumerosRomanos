@@ -1,4 +1,3 @@
-
 class NumerosRomanos:
     def __init__(self):
         self.resultado = 0
@@ -17,18 +16,23 @@ class NumerosRomanos:
             elif num_romano == "C":
                 self.resultado = 100
         else:
-            for i, x in num_romano:
+            for i, x in enumerate(num_romano):
                 if x == "I":
                     self.resultado += 1
                 elif x == "V":
-                    self.resultado += 5
+                    if num_romano[i - 1] == "I":
+                        self.resultado += 3
+                    else:
+                        self.resultado += 5
                 elif x == "X":
-                    self.resultado += 10
+                    if num_romano[i - 1] == "I":
+                        self.resultado += 8
+                    else:
+                        self.resultado += 10
                 elif x == "L":
-                    self.resultado += 50
-                elif x == "C":
-                    self.resultado += 100
-
-
+                    if num_romano[i - 1] == "X":
+                        self.resultado += 30
+                    else:
+                        self.resultado += 50
 
         return self.resultado
