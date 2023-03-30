@@ -22,8 +22,8 @@ class NumerosRomanosTest(unittest.TestCase):
     def test_C(self):
         self.assertEqual(self.n.numero("C"), 100)
 
-    def test_dos_num_iguales(self):
-        self.assertEqual(self.n.numero("XX"), 20)
+    def test_IV(self):
+        self.assertEqual(self.n.numero("IV"), 4)
 
 
 if __name__ == '__main__':
