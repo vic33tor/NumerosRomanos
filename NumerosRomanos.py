@@ -10,5 +10,7 @@ class NumerosRomanos:
                     self.resultado = 1
                 elif num_romano == "V":
                     self.resultado = 5
+                elif num_romano == "X":
+                    self.resultado = 10
 
         return self.resultado
