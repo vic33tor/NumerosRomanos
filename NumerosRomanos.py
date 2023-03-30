@@ -1,7 +1,6 @@
 class NumerosRomanos:
     def __init__(self):
         self.resultado = 0
-        self.letras = ["I", "V", "X", "L", "C"]
 
     def numero(self, num_romano):
         if len(num_romano) == 1:
