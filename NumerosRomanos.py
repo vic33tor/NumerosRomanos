@@ -7,4 +7,8 @@ class NumerosRomanos:
         for x in num_romano:
             if len(num_romano) == 1:
                 if num_romano == "I":
-                    return 1
+                    self.resultado = 1
+                elif num_romano == "V":
+                    self.resultado = 5
+
+        return self.resultado
